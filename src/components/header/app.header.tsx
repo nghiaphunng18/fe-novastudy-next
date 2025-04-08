@@ -92,11 +92,13 @@ export default function AppHeader() {
     const renderMenu = (
         <Menu
             id={menuId}
+            anchorEl={anchorEl}
             keepMounted
             open={isMenuOpen}
             onClose={handleMenuClose}
             transformOrigin={{ horizontal: 'right', vertical: 'top' }}
             anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
+            sx={{ mt: '8px' }}
         >
             <MenuItem>
                 <Link href={"/profile"} style={{
